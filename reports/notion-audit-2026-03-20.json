@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "run_at": "2026-03-20T10:05:00Z",
+    "space_url": "https://www.notion.so/2a1ed78da73080c9bc06ca9bf910868b?v=2fded78da7308027b770000cee100c29",
+    "checklist_url": "https://www.notion.so/FY26-H1-Checklist-CA-Dept-2fbed78da730808e8110f106bb3d1869",
+    "mode": "fail_issue_only",
+    "detailed_markdown_report": "reports/notion-audit-2026-03-20.md"
+  },
+  "summary": {
+    "fail_requirements": [
+      {
+        "id": "3.2",
+        "missing_verification_count": 16
+      },
+      {
+        "id": "3.5",
+        "missing_date_count": 22
+      }
+    ],
+    "issue_requirements": [
+      "1.4",
+      "3.3",
+      "3.4",
+      "4.1",
+      "4.2",
+      "4.3",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "7.1",
+      "7.2"
+    ]
+  },
+  "external_links": {
+    "note": "All extracted external links and page-level evidence are listed in markdown report.",
+    "unique_domains": [
+      "docs.google.com",
+      "biz.moneyforward.com",
+      "accounting.moneyforward.com",
+      "accounting-stg1-test.ebisubook.com",
+      "api-jp.cloud.scansnap.com",
+      "isv-api.cloud.scansnap.com",
+      "auth-jp.cloud.scansnap.com",
+      "drive.google.com",
+      "github.com",
+      "moneyforward.slack.com",
+      "attendance.moneyforward.com",
+      "circleci.com",
+      "figma.com",
+      "launcher.myapps.microsoft.com",
+      "myapplications.microsoft.com",
+      "analytics.google.com",
+      "lookerstudio.google.com",
+      "chromewebstore.google.com",
+      "moneyforward.cybozu.com",
+      "sites.google.com",
+      "miro.com",
+      "moneyforward.kibe.la",
+      "prod-files-secure.s3.us-west-2.amazonaws.com",
+      "mailto"
+    ]
+  }
+}
