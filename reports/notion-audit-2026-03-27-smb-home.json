@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "run_at": "2026-03-27T00:00:00Z",
+    "space_url": "https://www.notion.so/SMB-Cloud-Accounting-Home-309ed78da73080ccb621d75d6ecbb642",
+    "checklist_url": "https://www.notion.so/FY26-H1-Checklist-CA-Dept-2fbed78da730808e8110f106bb3d1869",
+    "mode": "fail_issue_only",
+    "notes": [
+      "PASS entries omitted by request.",
+      "Space URL resolved as page, not queryable data source.",
+      "Child page graph was not retrievable from fetch output."
+    ]
+  },
+  "summary": {
+    "fail_requirements": 0,
+    "issue_requirements": 17
+  },
+  "issues": [
+    {
+      "id": "1.4",
+      "title": "Entry homepage has references/links to all other pages",
+      "status": "ISSUE",
+      "note": "Link coverage cannot be validated without descendant graph."
+    },
+    {
+      "id": "3.1",
+      "title": "Every page has a designated Owner assigned",
+      "status": "ISSUE",
+      "note": "Per-page owner values unavailable without child inventory/data source."
+    },
+    {
+      "id": "3.2",
+      "title": "Every page has a Verification Date",
+      "status": "ISSUE",
+      "note": "Per-page verification values unavailable without child inventory/data source."
+    },
+    {
+      "id": "3.3",
+      "title": "Static documents are Page Locked",
+      "status": "ISSUE",
+      "note": "Policy text found, but page-level lock checks blocked by missing static-doc set."
+    },
+    {
+      "id": "3.4",
+      "title": "Dynamic documents remain unlocked",
+      "status": "ISSUE",
+      "note": "Page list and dynamic-doc classification unavailable."
+    },
+    {
+      "id": "3.5",
+      "title": "No documents are past their review date",
+      "status": "ISSUE",
+      "note": "Per-page date fields unavailable without child inventory/data source."
+    },
+    {
+      "id": "4.1",
+      "title": "Finalized docs moved to Stock with Owner + Date",
+      "status": "ISSUE",
+      "note": "Needs zone membership and per-page metadata."
+    },
+    {
+      "id": "4.2",
+      "title": "Abandoned docs moved to Archive",
+      "status": "ISSUE",
+      "note": "Needs archive membership and content classification."
+    },
+    {
+      "id": "4.3",
+      "title": "Personal notes are in Private spaces",
+      "status": "ISSUE",
+      "note": "Needs ownership/privacy intent validation."
+    },
+    {
+      "id": "5.1",
+      "title": "Archive contains only completed/deprecated content",
+      "status": "ISSUE",
+      "note": "Needs archive page list and semantic checks."
+    },
+    {
+      "id": "5.2",
+      "title": "All archive pages are Page Locked",
+      "status": "ISSUE",
+      "note": "Needs archive membership list and lock checks."
+    },
+    {
+      "id": "5.3",
+      "title": "Archive docs are no longer edited",
+      "status": "ISSUE",
+      "note": "Needs archive membership list and last-edit thresholds."
+    },
+    {
+      "id": "5.4",
+      "title": "No active projects/current specs are in Archive",
+      "status": "ISSUE",
+      "note": "Needs archive membership and semantic checks."
+    },
+    {
+      "id": "6.1",
+      "title": "Primary documentation lives in Notion",
+      "status": "ISSUE",
+      "note": "Requires policy-level adjudication."
+    },
+    {
+      "id": "6.2",
+      "title": "Technical docs in Notion are indexed in Backstage",
+      "status": "ISSUE",
+      "note": "No backstage evidence found in scoped search; descendants not available."
+    },
+    {
+      "id": "6.3",
+      "title": "No unauthorized external tools",
+      "status": "ISSUE",
+      "note": "External links exist; full inventory blocked by content/descendant limits."
+    },
+    {
+      "id": "6.4",
+      "title": "Exceptions are justified and indexed",
+      "status": "ISSUE",
+      "note": "Needs exception register."
+    },
+    {
+      "id": "7.1",
+      "title": "Stock information properly maintained",
+      "status": "ISSUE",
+      "note": "Needs semantic review of stock descendants."
+    },
+    {
+      "id": "7.2",
+      "title": "Flow information in designated/private areas",
+      "status": "ISSUE",
+      "note": "Needs semantic review of flow descendants/private pages."
+    }
+  ],
+  "evidence": {
+    "search_highlights": [
+      "🗂️ Stock Zone (Official & Active)",
+      "📝 Flow Zone (Draft)",
+      "📦 Archive Zone",
+      "✅ Designated owner and next review date required for all top-level pages",
+      "✅ Static documents ... must be page locked",
+      "Slack channel: https://moneyforward.slack.com/archives/C089A6PF1HQ"
+    ]
+  },
+  "blocking_gap": {
+    "description": "Need a queryable child data source or descendant listing to produce page-level FAIL lines.",
+    "required": [
+      "collection://... data source for this home space",
+      "or full descendant page list with fetchable content"
+    ]
+  }
+}
